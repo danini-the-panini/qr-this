@@ -1,0 +1,45 @@
+html
+  head
+    title QR This!
+    link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans' rel='stylesheet' type='text/css'
+    link rel="stylesheet" type="text/css" href="style/layout.css"
+    link rel="stylesheet" type="text/css" href="style/style.css"
+
+  body
+    h1 QR This!
+    hr
+    .subtitle
+      | Transfer links to your phone without any plugins or apps.
+        Just click a button and snap the QR code with your phone's native QR code reader.
+    .steps
+      .step
+        h2 #1
+        .step-content
+          p Drop this button in
+          p your favourites bar
+          div
+            img class="arrow" src="1.png" width="50px"
+          .pad
+            a href="javascript:(function()%20%7B%20open('http://localhost:4567/qrthis?url='+encodeURIComponent(document.location.href),'_self').focus();%20%7D)();" class="btn"
+              | QR This!
+      .step
+        h2 #2
+        .step-content
+          p Click on the bookmark
+          p when viewing any webpage
+          .helper
+          img class="center" src="2.png"
+      .step
+        h2 #3
+        .step-content
+          p Instant QR Code!
+          p Now snap it with your phone
+          .helper
+          img class="center" src="3.png"
+
+    .sss Super Simple Stuff!
+
+    hr
+    .footer
+      p Daniel Smith &copy; #{Time.new.year}
+      p Risk at Own Use

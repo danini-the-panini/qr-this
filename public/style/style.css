@@ -1,0 +1,52 @@
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+}
+
+h1, h2, h3
+{
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+h1
+{
+  font-size: 48pt;
+}
+
+h2
+{
+  font-size: 20pt;
+}
+
+div.top
+{
+  font-size: 20pt
+}
+
+a.btn
+{
+  font-family: 'Press Start 2P', sans-serif;
+  text-decoration: none;
+
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+div.top
+{
+  color: #888;
+  font-size: 12pt;
+}
+
+p.solid
+{
+  color: black;
+  font-size: 16pt;
+}
+
+div.footer
+{
+  font-size: 12pt;
+}

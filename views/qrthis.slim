@@ -1,0 +1,27 @@
+html
+  head
+    title QR This!
+    script language="javascript" type="text/javascript" src="script/jquery.min.js"
+    script language="javascript" type="text/javascript" src="script/qrcode.min.js"
+    link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans' rel='stylesheet' type='text/css'
+    link rel="stylesheet" type="text/css" href="style/layout.css"
+    link rel="stylesheet" type="text/css" href="style/style.css"
+    javascript:
+      $('html').click(function()
+      {
+        window.history.back()
+      });
+
+  body
+    .top
+      p class="solid" #{@url}
+      | (click anywhere to go back)
+
+    #qrcode
+    javascript:
+      new QRCode(document.getElementById("qrcode"), '#{@url}');
+
+    .bottom
+      | Made by 
+      a href="/"
+        | QR This!
