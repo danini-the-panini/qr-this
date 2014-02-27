@@ -20,7 +20,7 @@ html
           div
             img class="arrow" src="1.png" width="50px"
           .pad
-            a href="javascript:(function()%20%7B%20open('http://localhost:4567/qrthis?url='+encodeURIComponent(document.location.href),'_self').focus();%20%7D)();" class="btn"
+            a href="javascript:(function()%20%7B%20open('http://#{request.host}:#{request.port}/qrthis?url='+encodeURIComponent(document.location.href),'_self').focus();%20%7D)();" class="btn"
               | QR This!
       .step
         h2 #2
