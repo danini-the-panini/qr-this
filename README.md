@@ -1,7 +1,7 @@
 qr-this
 =======
 
-Quick and easy bookmark for turning any page into a QR code.
+Quick and easy bookmark for turning any page into a QR code. [Try it out!](http://qr-this.herokuapp.com)
 
 Usage
 -----
